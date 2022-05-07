@@ -2,8 +2,10 @@ import React from "react";
 
 const PostList = () => {
   return (
-    <div className="d-flex justify-content-center border border-2 border-secondary rounded">
-      <div className="p-3 "></div>
+    <div>
+      <div className="d-flex justify-content-center">
+        <div className="col-12 border border-2 border-light rounded shadow"></div>
+      </div>
     </div>
   );
 };

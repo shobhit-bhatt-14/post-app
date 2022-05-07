@@ -12,11 +12,13 @@ code {
     monospace;
 }
 
-textarea {
-  resize: none !important;
-}
-
-button:focus, textarea:focus {
+button:focus,
+input:focus {
   outline: none !important;
   box-shadow: none !important;
+}
+
+button {
+  background: none;
+  border: none;
 }

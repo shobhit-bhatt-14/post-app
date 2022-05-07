@@ -1,39 +1,52 @@
 import React from "react";
 
 const PostForm = () => {
+  const uploadMedia = () => {
+    document.querySelector("#media").click();
+  };
+
   return (
     <div>
       <div className="d-flex justify-content-center">
         <form
           method="POST"
-          className="p-3 border border-2 border-light rounded shadow"
+          className="col-12 p-3 border border-2 border-light rounded shadow"
         >
-          <div className="mb-3">
-            <h3 className="text-center">Create Post</h3>
-          </div>
-          <div className="mb-3">
-            <textarea
+          <div className="d-flex">
+            <img
+              src="/images/user.jpg"
+              className="rounded-circle me-3"
+              alt="user"
+              height="50"
+              width="50"
+            />
+            <input
+              type="text"
               name=""
               id=""
-              cols="50"
-              rows="4"
-              className="form-control"
+              className="border-0"
               placeholder="Type here ..."
-            ></textarea>
+            />
           </div>
-          <div className="mb-3 p-3">
-            <p className="text-center">Add photo/video</p>
+          <hr />
+          <div className="d-flex justify-content-around align-items-center">
             <input
               type="file"
               id="media"
               name="media"
-              className="form-control"
+              className="d-none"
               accept="image/*,video/*"
-            ></input>
-          </div>
-          <div className="mt-3 text-center">
-            <button className="btn btn-primary" type="submit">
-              &emsp;Post&emsp;
+            />
+            <button
+              type="button"
+              onClick={() => uploadMedia()}
+              className="d-flex align-items-center"
+            >
+              <i className="bi bi-images text-danger fs-3" />
+              <span className="ms-1">Add photo/video</span>
+            </button>
+            <button className="btn btn-primary fw-bold" type="submit">
+              &nbsp;Post&nbsp;
             </button>
           </div>
         </form>
