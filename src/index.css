@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth !important;
+  background-color: #eee !important;
 }
 
 code {
@@ -21,4 +23,17 @@ input:focus {
 button {
   background: none;
   border: none;
+}
+
+.postMedia {
+  max-height: 50vh !important;
+  max-width: 100% !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: #eee !important;
 }
