@@ -29,26 +29,18 @@ const Post = () => {
         <img className="postMedia rounded" src="/images/post.jpg" alt="post" />
       </div>
       <hr />
-      <div className="d-flex">
-        <div className="flex-fill d-flex justify-content-center align-items-center">
-          <a className="text-decoration-none text-secondary px-3 py-1 rounded">
-            <i className="bi bi-hand-thumbs-up fs-4" />
-            &ensp;
-            <span>Like</span>
-          </a>
-        </div>
-        <div className="flex-fill d-flex justify-content-center align-items-center">
-          <a className="text-decoration-none text-secondary px-3 py-1 rounded">
-            <i className="bi bi-chat-dots fs-4" />
-            &ensp;
-            <span>Comment</span>
-          </a>
-        </div>
-        <div className="flex-fill d-flex justify-content-center align-items-center">
-          <div className="text-decoration-none text-dark">
-            5 Likes &bull; 2 Comments
-          </div>
-        </div>
+      <div className="d-flex justify-content-evenly align-items-center">
+        <a className="text-decoration-none text-secondary rounded p-1 fs-6">
+          <i className="bi bi-hand-thumbs-up" />
+          &ensp;
+          <span>Like</span>
+        </a>
+        <a className="text-decoration-none text-secondary rounded p-1 fs-6">
+          <i className="bi bi-chat-dots" />
+          &ensp;
+          <span>Comment</span>
+        </a>
+        <div className="text-decoration-none text-dark fs-6">5 Likes</div>
       </div>
       <hr />
       <div className="d-flex justify-content-center">
